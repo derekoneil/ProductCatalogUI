@@ -21,6 +21,15 @@ app.get('/products', function (req, res) {
           res.end(body);
         });
 });
+app.get('/statictweets', function (req, res) {
+    
+      request('http://twitter-feed:30000/statictweets', function (error, response, body) {
+        console.log('error:', error); 
+        console.log('statusCode:', response && response.statusCode);
+        console.log('body:', body);
+          res.end(body);
+        });
+});
 app.listen(PORT, function () {
     console.log('listening on port ' + PORT)
 });
