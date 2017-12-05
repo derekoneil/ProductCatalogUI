@@ -14,7 +14,7 @@ app.get('/', function (req, res) {
 });
 app.get('/products', function (req, res) {
     
-      request('http://alpha-office-rest-service:3000/products', function (error, response, body) {
+      request('http://alpha-office-rest-service:30000/products', function (error, response, body) {
         console.log('error:', error); 
         console.log('statusCode:', response && response.statusCode);
         console.log('body:', body);
