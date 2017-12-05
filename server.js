@@ -21,9 +21,9 @@ app.get('/products', function (req, res) {
           res.end(body);
         });
 });
-app.get('/statictweets', function (req, res) {
+app.get('/statictweets/:search', function (req, res) {
     
-      request('http://twitter-feed:30000/statictweets', function (error, response, body) {
+      request('http://twitter-feed:30000/statictweets/' + req.params.search, function (error, response, body) {
         console.log('error:', error); 
         console.log('statusCode:', response && response.statusCode);
         console.log('body:', body);
