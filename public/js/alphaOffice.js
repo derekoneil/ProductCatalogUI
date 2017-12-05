@@ -5,7 +5,7 @@ CHANGE THE URLS BELOW FOR THE WORKSHOP - THESE URLS MUST POINT TO THE MICROSERVI
 *********************************************************/
 
 // URL for the MySQL database REST service
-var dbServiceURL = "http://alpha-office-rest-service:30000/products";
+var dbServiceURL = "products";
 
 // URL for the Twitter REST service
 var tweetServiceBaseURL = "http://twitter-feed:30000/statictweets";
