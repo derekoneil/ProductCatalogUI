@@ -8,7 +8,7 @@ CHANGE THE URLS BELOW FOR THE WORKSHOP - THESE URLS MUST POINT TO THE MICROSERVI
 var dbServiceURL = "products";
 
 // URL for the Twitter REST service
-var tweetServiceBaseURL = "http://twitter-feed:30000/statictweets";
+var tweetServiceBaseURL = "statictweets";
 
 /*********************************************************
 CHANGE THE URLS ABOVE FOR THE WORKSHOP.    
